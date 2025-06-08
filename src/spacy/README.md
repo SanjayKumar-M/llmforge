@@ -1,20 +1,30 @@
-# Span: Not a method, used internally to represent a slice of tokens
-# Example: a span could represent a part of the text, like "New York"
+## My undersntandings
 
-# Noun Chunks / ents / sents: Span is used internally by spaCy for these
-# Example: "New York" could be recognized as a noun chunk (ent) by spaCy
+## Span
+A `Span` is not a method but an internal representation of a slice of tokens.  
+**Example:** A span could represent a part of the text, like `"New York"`.
 
-# pos_: Grammatical role of word (e.g., noun, verb, adjective)
-# Example: 'dog' -> 'NOUN', 'running' -> 'VERB'
+## Noun Chunks / Entities / Sentences
+`Span` is used internally by spaCy to identify noun chunks, entities, and sentences.  
+**Example:** `"New York"` could be recognized as a noun chunk (entity) by spaCy.
 
-# NER (Named Entity Recognition): Labels chunks/words to give them meaning
-# Example: "Royal Challengers Bangalore" might be labeled as an 'ORG' (organization)
+## `pos_`
+Represents the grammatical role of a word (e.g., noun, verb, adjective).  
+**Example:** `'dog' -> 'NOUN'`, `'running' -> 'VERB'`.
 
-# ents: Complete entities like "Royal Challengers Bangalore" (not half chunks)
-# Example: spaCy would recognize "Barack Obama" as a single named entity
+## Named Entity Recognition (NER)
+Labels chunks or words to assign them meaning.  
+**Example:** `"Royal Challengers Bangalore"` might be labeled as an `'ORG'` (organization).
 
-# Lexeme: spaCy’s internal dictionary/vocab mapping for word knowledge
-# Example: 'run' -> represents the word 'run' in spaCy's internal system
+## Entities (`ents`)
+Represents complete entities, not partial chunks.  
+**Example:** spaCy would recognize `"Barack Obama"` as a single named entity.
 
-# Doc: The full input to nlp() which contains the processed text
-# Example: A document would be the entire text you pass to the nlp() function
+## Lexeme
+spaCy’s internal dictionary/vocabulary mapping for word knowledge.  
+**Example:** `'run'` represents the word `'run'` in spaCy's internal system.
+
+## Document (`Doc`)
+The full input processed by the `nlp()` function, containing the entire text.  
+**Example:** A document would be the entire text you pass to the `nlp()` function.
+
