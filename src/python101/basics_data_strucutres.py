@@ -49,3 +49,39 @@ print(product_of_numbers)  # Output: 120
 #tuples (immutable i.e cannot change values and represented within () )
 point = (10,20)
 print(point[0])
+
+# best usecase, tuples as dict key in data analysis, geospatial data or even game dev (coordinates), not list coz it is mutable, and since dict key need to be hashed and inmutable, tuples are more better
+geospatial_data = {(1.34,9.881):"Chennai",(2.87,7.11):"Madurai"}  #ignore the mag, lat, just random float lol!
+print(geospatial_data[(1.34,9.881)])
+
+# dictionary (Key value pair), just like hashmap (maps in js)
+"""
+Dictionaries are widely used in AI for:
+
+Representing feature vectors.
+Storing mappings between words and their indices in NLP.
+Implementing lookup tables.
+Caching results of expensive computations.
+"""
+#Dict comprehension
+
+numbers = [100,200,300,400,500]
+square_dict = {key:key**2 for key in numbers} # key:value for key in numbers
+print(square_dict)
+
+# dict methods
+
+print(square_dict.get(100)) # besides [] we can use this , just like map has get,set in js
+print(square_dict.get(700,70000)) # we can set the value as well for unavailable key
+
+
+# sets
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+
+print(set1.union(set2)) # Output: {1, 2, 3, 4, 5, 6, 7}
+print(set1.intersection(set2)) # Output: {3, 4, 5}
+print(set1.difference(set2)) # Output: {1, 2}
+print(set1.symmetric_difference(set2)) # Output: {1, 2, 6, 7}
+
+
