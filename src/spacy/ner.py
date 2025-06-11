@@ -21,4 +21,5 @@ for ner in rcb_data.noun_chunks:
     print("Noun chunks",ner.text_with_ws) # with white space at the end "Sanjay " example
 
 
-displacy.serve(rcb_data, style="ent") 
+# displacy.serve(rcb_data, style="ent") 
+displacy.serve(rcb_data, style="dep", port=5000)
