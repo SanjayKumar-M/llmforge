@@ -35,3 +35,31 @@ for name, age in zip(names, ages):
 # Name: Alice, Age: 25
 # Name: Bob, Age: 30
 # Name: Charlie, Age: 28
+
+
+
+
+
+
+
+# functions (Coolest part)
+
+# lambda function (anonymous) -> lambda num1,num2 : num1*num2
+add = lambda x, y: x + y
+print(add(2,3))
+
+numbers = [100,200,300,400]
+mapped = list(map(lambda num:num**100,numbers))
+print(mapped)
+
+
+students = [
+    {"name": "Alice", "grade": "B"},
+    {"name": "Bob", "grade": "A"},
+    {"name": "Charlie", "grade": "C"}
+]
+
+# Using a lambda function to sort the students by grade
+sorted_students = sorted(students, key=lambda student: student["grade"]) # here the syntax is sorted(iterable, key)
+
+print(sorted_students)

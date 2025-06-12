@@ -19,3 +19,5 @@ shop = [('Rc Helicopter', 1200), ('Blazer', 7000), ('Chocos', 20), ('Cloud Nine 
 filtered = {product[0]: product[1] for product in shop if product[1] > 10}
 
 print(filtered)
+
+
