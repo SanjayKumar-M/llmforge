@@ -1,4 +1,4 @@
-import streamlit as st
+import steamlit as st
 from document_processing import document_processing
 from embedding import store_in_vector_db, retrieve_relevant_chunks
 from llm import get_response

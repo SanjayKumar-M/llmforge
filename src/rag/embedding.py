@@ -18,8 +18,6 @@ def embed_text(text: str):
         embeddings = outputs.last_hidden_state[:, 0]
         return embeddings[0].numpy()
 
-# Step 3: Connect to ChromaDB
-
 
 # Function to create a vector DB and store all the resume chunks inside
 def store_in_vector_db(chunks, collection):
