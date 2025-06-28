@@ -1,5 +1,5 @@
 # LLMForge - Building LLMs from Scratch
-My personal hands-on learning repo for implementing LLMs from scratch.
+My personal hands-on learning repo for implementing LLMs from scratch, experimenting with different tools/tech stacks in AI
 
 # goal
 The acutal goal is to document, creating reference for my futureself
